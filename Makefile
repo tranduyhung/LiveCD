@@ -1,9 +1,27 @@
 all: lbconfig lbbuild
 
+###Package Groups
+#GUI
+pkg = xorg
+#LXDE
+pkg += lxde-core lxterminal lxappearance lxsession-edit lxtask lxinput lxrandr obconf
+#Internet
+pkg += chromium-browser pidgin sylpheed
+#Office
+pkg += openoffice.org
+#Vietnamese
+pkg += ibus-unikey
+#Multimedia
+pkg += aqualung gnome-mplayer
+#Graphics
+pkg += gpicview mtpaint
+#Others
+pkg += galculator leafpad xarchiver xfburn synaptic menu
+
 lbconfig:
 	lb config \
 		--architecture "i386" \
-		--packages "xorg lxde-core galculator gpicview lxterminal leafpad xarchiver mtpaint chromium-browser pidgin sylpheed openoffice.org openoffice.org-writer openoffice.org-calc openoffice.org-impress coreutils aqualung gnome-mplayer xfburn lxappearance lxsession-edit lxtask lxinput lxrandr obconf synaptic ibus-unikey zip unzip menu" \
+		--packages "$(pkg)" \
 		--distribution "squeeze" \
 		--binary-images "iso" \
 		--debian-installer "live" \
