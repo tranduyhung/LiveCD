@@ -8,7 +8,7 @@ pkg += lxde-core lxterminal lxappearance lxsession-edit lxtask lxinput lxrandr o
 #Internet
 pkg += chromium-browser pidgin sylpheed
 #Office
-pkg += openoffice.org
+pkg += openoffice.org-writer openoffice.org-calc openoffice.org-impress
 #Vietnamese
 pkg += ibus-unikey
 #Multimedia
@@ -16,7 +16,7 @@ pkg += aqualung gnome-mplayer
 #Graphics
 pkg += gpicview mtpaint
 #Others
-pkg += galculator leafpad xarchiver xfburn synaptic menu
+pkg += galculator leafpad xarchiver xfburn synaptic menu debian-installer-launcher
 
 lbconfig:
 	lb config \
@@ -24,7 +24,6 @@ lbconfig:
 		--packages "$(pkg)" \
 		--distribution "squeeze" \
 		--binary-images "iso" \
-		--debian-installer "live" \
 		--language "vi" \
 		--bootappend-live "locales=vi_VN.UTF-8"
 lbbuild:
