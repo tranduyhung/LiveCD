@@ -16,7 +16,7 @@ pkg += aqualung gnome-mplayer
 #Graphics
 pkg += gpicview mtpaint
 #Others
-pkg += galculator leafpad xarchiver xfburn synaptic menu debian-installer-launcher
+pkg += galculator leafpad xarchiver xfburn synaptic menu
 
 lbconfig:
 	lb config \
@@ -25,6 +25,7 @@ lbconfig:
 		--distribution "squeeze" \
 		--binary-images "iso" \
 		--language "vi" \
+		--debian-installer "live" \
 		--bootappend-live "locales=vi_VN.UTF-8"
 lbbuild:
 	sudo lb build
