@@ -13,10 +13,12 @@ pkg += openoffice.org-writer openoffice.org-calc openoffice.org-impress
 pkg += ibus-unikey
 #Multimedia
 pkg += aqualung gnome-mplayer
+#System
+pkg += network-manager-gnome gnome-power-manager synaptic
 #Graphics
 pkg += gpicview mtpaint
-#Others
-pkg += galculator leafpad xarchiver xfburn synaptic menu
+#Othersy
+pkg += galculator leafpad xarchiver xfburn menu
 
 lbconfig:
 	lb config \
