@@ -12,9 +12,9 @@ pkg += openoffice.org-writer openoffice.org-calc openoffice.org-impress
 #Vietnamese
 pkg += ibus-unikey
 #Multimedia
-pkg += aqualung gnome-mplayer
+pkg += aqualung gnome-mplayer alsa-oss alsamixergui
 #System
-pkg += network-manager-gnome gnome-power-manager synaptic
+pkg += network-manager-gnome gnome-power-manager synaptic update-manager-core update-manager-gnome
 #Graphics
 pkg += gpicview mtpaint
 #Othersy
