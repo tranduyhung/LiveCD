@@ -14,7 +14,7 @@ pkg += ibus-unikey
 #Multimedia
 pkg += aqualung gnome-mplayer alsa-oss alsamixergui
 #System
-pkg += network-manager-gnome gnome-power-manager synaptic update-manager-core update-manager-gnome gdebi gnome-system-tools
+pkg += network-manager-gnome gnome-power-manager synaptic update-manager-core update-manager-gnome gdebi
 #Graphics
 pkg += gpicview mtpaint
 #Othersy
